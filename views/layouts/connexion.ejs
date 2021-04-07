@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/connexion.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+    <!-- / header -->
+
+    <!-- main -->
+    <main class="mt-md-5 mt-4 mx-auto">
+        <div class="row">
+            <div class="col-md-6 d-md-block d-none mx-auto text-center">
+                <img style="width: 60%; margin-top: 3em;" class="mx-auto" src="/images/login-img.png " alt=" ">
+            </div>
+            <!--- <div class="col-md-6 col-12 d-none d-md-block ">
+                <img class="img-fluid " src="/images/bg2.png " alt=" ">
+            </div>-->
+            <div class="col-md-5 mt-5 pt-3 row mx-auto card">
+
+                <div class=" ">
+
+                    <form method="post" action="/connexion" class=" ">
+                        <div class="form-group mx-auto col-md-10 ">
+
+                            <label class="text-center " for="pseudo ">Entrer un Pseudo</label>
+                            <div class="input-group mx-auto ">
+                                <div class="input-group-prepend ">
+                                    <span class="input-group-text " id="pseudo "> <i class="fa fa-user " ></i> </span>
+                                </div>
+                                <input class="form-control " type="text " name="pseudo" placeholder="D-way " aria-label="pseudo " aria-describedby="pseudo ">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mx-auto col-md-10 ">
+                            <label class="text-center " for="pseudo ">Mot de Passe</label>
+                            <div class="input-group mx-auto inputGroups ">
+                                <div class="input-group-prepend ">
+                                    <span class="input-group-text " id="password"> <i class="fa fa-key " ></i> </span>
+                                </div>
+                                <input class="form-control" id="password-field" type="password" name="psw">
+
+                                <i toggle="#password-field" class="fas fa-eye field-icon toggle-password"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center ">
+                            <p> <a href=" "> Mot de passe oublié ?</a> </p>
+                        </div>
+
+                        <div class="form-group text-center ">
+                            <input class="btn  btnInscription" type="submit" value="Envoyer" name=" ">
+                        </div>
+                        <div class="form-group mx-auto">
+                            <p>
+                                Vous n'avez pas de compte ?
+                                <a class="ml-3 text-ecoration-none" href="/inscription">
+                                    Créer un compte ici
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer class="page-footer font-small pt-4 mt-5 ">
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+    <!-- end footer -->
+
+
+    <script type="text/javascript " src="/fontawesome/js/all.min.js "></script>
+    <script type="text/javascript " src="/mdbootstrap/js/jquery.min.js "></script>
+    <script type="text/javascript " src="/mdbootstrap/js/popper.min.js "></script>
+    <script type="text/javascript " src="/mdbootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="/mdbootstrap/js/mdb.min.js "></script>
+
+    <script type="text/javascript " src="/javascript/connexion.js "></script>
+</body>
+
+</html>
