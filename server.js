@@ -1,19 +1,12 @@
 const http = require('http');
 const path = require('path');
 const express = require('express');
-const bodyParser = require('body-parser')
 
 const app = express();
 
 
 app.use(express.json()); 
 app.use(express.urlencoded()); //Parse URL-encoded bodies
-
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
 
 
 const httpServer = http.createServer(app);
@@ -33,6 +26,9 @@ const connexion = require('./routes/connexion');
 const deconnexion = require('./routes/deconnexion');
 const paiement = require('./routes/paiement');
 
+const mairieAccueil = require('./routes/mairie/accueil');
+
+
 
 
 app.use(index);
@@ -41,6 +37,7 @@ app.use(connexion);
 app.use(deconnexion);
 app.use(inscription);
 app.use(paiement);
+app.use('/mairie',mairieAccueil);
 
 /* normalizePort permet de rechercher un port valide afin d'eviter des
  *   desagrement lors du deploiyement.

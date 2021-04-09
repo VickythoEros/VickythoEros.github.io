@@ -15,110 +15,59 @@
 
     <!-- main -->
     <main class="mt-md-5 mt-4 mx-auto">
-        <div class="container-fluid mx-auto text-center" style="background: rgb(13, 7, 32);">
-            <div class="col-md-12 mx-auto text-center p-3">
-                <h3 class="h3 text-center mx-auto white-text"> Inscription</h3>
-            </div>
-        </div>
-        <div class="row container mt-3 mx-auto">
-            <div class="col-md-6 col-12 d-none d-md-block">
-                <img class="img-fluid" src="/images/bg2.png" alt="">
-            </div>
-            <div class="col-md-6 row mx-auto">
+       <div class="inscription-header container-fluid">
 
-                <div class="col-12 card pt-2 mx-auto">
+       </div>
+       <div class="inscription-body mx-auto">
 
-                    <!---
-                    <div class="col-12 imgInscription mx-auto" >
-                        <img class="mx-auto text-center "  src="/images/inscription3.png" alt="">
-                    </div>-->
-                    <form method="post" action="/inscrire" class="">
-                        <div class="form-group mx-auto col-md-10">
-
-                            <label class="text-center" for="pseudo">Entrer un Pseudo</label>
-                            <div class="input-group mx-auto ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="pseudo"> <i class="fa fa-user" ></i> </span>
-                                </div>
-                                <input class="form-control" type="text" name="pseudo" placeholder="D-way" aria-label="pseudo " aria-describedby="pseudo">
-                            </div>
-
-                        </div>
-
-
-                        <div class="form-group mx-auto col-md-10">
-                            <label class="" for="email">Votre adresse electronique</label>
-                            <div class="input-group mx-auto ">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="email"> <i class="fa fa-at" ></i> </span>
-                                </div>
-                                <input class="form-control" type="email" name="email" placeholder="d-way@esatic.ci" aria-label="email " aria-describedby="email">
-                            </div>
-                        </div>
-                        <div class="form-group mx-auto col-md-10 row">
-                            <div class="form-group mx-auto col-md-6">
-                                <label class="" for="numero">Numéro d'acte</label>
-                                <input class="form-control" id="numero" type="text" name="acte_nais" placeholder="0101">
-                            </div>
-                            <div class="form-group mx-auto col-md-6">
-                                <label class="" for="date">Date établissement </label>
-                                <input class="form-control" type="date" name="date_etab" placeholder="01/01/2000" id="date">
-
-                            </div>
-                        </div>
-
-                        <div class="form-group mx-auto col-md-10 ">
-                            <label class=" " for="ville ">Votre Ville d'etablissement</label>
-                            <div class="input-group mx-auto ">
-                                <div class="input-group-prepend ">
-                                    <span class="input-group-text " id="ville "> <i class="fas fa-sort-numeric-up-alt "></i> </span>
-                                </div>
-                                <input class="form-control " type="text " name="ville_nais" placeholder="Abidjan " aria-label="email " aria-describedby="email ">
-                            </div>
-                        </div>
-
-                        <div class="form-group mx-auto col-md-10">
-                            <label class="text-center" for="pseudo">Mot de Passe</label>
-                            <div class="input-group mx-auto inputGroups">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="password"> <i class="fa fa-key" ></i> </span>
-                                </div>
-                                <input class="form-control" type="password" name="psw" placeholder="0000000" aria-label="password " aria-describedby="password">
-
-                                <div class="input-group-append " style="background-color: white;">
-                                    <span class="input-group-text "> <i class="fa fa-eye" ></i> </span>
-                                </div>
-                            </div>
-                        </div>
+<div class="form_holder">
+    <h2 class="fs-title" style="color:#fff;">steps jquery form with Icons</h2>
+    <form id="msform">
+      <ul id="progressbar">
+        <li class="active">1. Complaints Details</li>
+        <li>2. Contact Information</li>
+        <li>3. Confirmation</li>
+      </ul>
+      <fieldset>
+        <h2 class="fs-title">Create your account</h2>
+        <h3 class="fs-subtitle">This is step 1</h3>
+        <input type="text" name="email" placeholder="Email" />
+        <input type="password" name="pass" placeholder="Password" />
+        <input type="password" name="cpass" placeholder="Confirm Password" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+      </fieldset>
+      <fieldset>
+        <h2 class="fs-title">Social Profiles</h2>
+        <h3 class="fs-subtitle">Your presence on the social network</h3>
+        <input type="text" name="twitter" placeholder="Twitter" />
+        <input type="text" name="facebook" placeholder="Facebook" />
+        <input type="text" name="gplus" placeholder="Google Plus" />
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+      </fieldset>
+      <fieldset>
+        <h2 class="fs-title">Personal Details</h2>
+        <h3 class="fs-subtitle">We will never sell it</h3>
+        <input type="text" name="fname" placeholder="First Name" />
+        <input type="text" name="lname" placeholder="Last Name" />
+        <input type="text" name="phone" placeholder="Phone" />
+        <textarea name="address" placeholder="Address"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+      </fieldset>
+    </form>
+    </div>
+    
+       </div>
+        
 
 
-                        <div class="form-group mx-auto col-md-10">
 
-                            <label class="text-center" for="pseudo">Confirmer le Mot de Passe</label>
-                            <div class="input-group mx-auto inputGroups">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="confPassword"> <i class="fa fa-key" ></i> </span>
-                                </div>
-                                <input class="form-control" type="password" name="confirm_psw" placeholder="0000000" aria-label="confPassword " aria-describedby="confPassword">
-                                <div class="input-group-append bg-white">
-                                    <span class="input-group-text"> <i class="fa fa-eye" ></i> </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group text-center">
-                            <input class="btn mx-auto btnInscription" type="submit" value="Envoyer" name="">
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-
+    
     </main>
     <!-- end main -->
 
-    <!-- footer -->
+    <!-- footer --
     <footer class="page-footer font-small pt-4 mt-5">
         <%- include('../partials/footer.ejs') %>
     </footer>
